@@ -59,7 +59,7 @@
 
 .about {
   width: 70%;
-  height: 556px;
+  min-height: 556px;
 }
 .ident-items {
   display: flex;

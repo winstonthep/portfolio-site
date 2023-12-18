@@ -53,11 +53,6 @@ const IdentityItem = (props: IdentityItemProps) => {
       >
         <IonIcon icon={props.icon} className={props.className} />
       </a>
-
-      {/* <div className=" flex flex-col justify-center pl-4 break-words w-3/5">
-        <div className="text-gray-400 text-md font-bold">{props.title}</div>
-        <div className="text-white text-xs">{props.description}</div>
-      </div> */}
     </div>
   );
 };
