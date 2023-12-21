@@ -1,22 +1,28 @@
 import { About } from "./About";
 import { Navbar } from "./Navbar";
 import { Resume } from "./Resume";
-import { useState } from "react";
+import { Projects } from "./Projects";
 import { DetailsSectionEnum } from "./types";
 
 
-export const DetailsSection = () => {
+type DetailsSectionProps = {
+  currentSection: DetailsSectionEnum;
+  setCurrentSection: (section: DetailsSectionEnum) => void;
 
-  const [currentSection, setCurrentSection] = useState<DetailsSectionEnum>(DetailsSectionEnum.ABOUT);
+};
+export const DetailsSection = (props : DetailsSectionProps) => {
+
+
 
   return (
     <div className="p-4 h-full relative">
       <Navbar
-        currentSection={currentSection}
-        setCurrentSection={setCurrentSection}
+        currentSection={props.currentSection}
+        setCurrentSection={props.setCurrentSection}
       />
-      {currentSection === DetailsSectionEnum.ABOUT && <About />}
-      {currentSection === DetailsSectionEnum.RESUME && <Resume />}
+      {props.currentSection === DetailsSectionEnum.ABOUT && <About />}
+      {props.currentSection === DetailsSectionEnum.RESUME && <Resume />}
+      {props.currentSection === DetailsSectionEnum.WORK && <Projects />}
     </div>
   )
 };

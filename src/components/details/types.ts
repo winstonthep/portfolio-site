@@ -1,8 +1,17 @@
+import moviedlecard from "../../assets/moviedle_card.webp";
+import posterdlecard from "../../assets/posterdle_card.webp";
+import nflxdlecard from "../../assets/nflxdle_card.webp";
+import bookdlecard from "../../assets/bookdle_card.webp";
+import tvdlecard from "../../assets/tvdle_card.webp";
+import promptlockercard from "../../assets/promptlocker.png";
+import augiecard from "../../assets/augiepreviewimg.png";
+
 export enum DetailsSectionEnum {
   ABOUT = "About",
   RESUME = "Resume",
-  CONTACT = "Contact",
+  WORK = "Work",
 }
+
 
 export const jobExperience = [
   {
@@ -42,3 +51,45 @@ export const jobExperience = [
     ]
   }
 ];
+
+export const ProjectSites =[{
+  title: "Augie",
+  description: "Augie: AI Assisted Video Creation & Editing (beta preview)",
+  link: "https://beta.meetaugie.com/",
+  image: augiecard,
+
+}, {
+  title: "PromptLocker",
+  description: "PromptLocker: a community for AI Artists to get and give feedback",
+  link: "https://www.promptlocker.com/",
+  image: promptlockercard,
+},{
+  title: "Moviedle",
+  description: "Can you name the movie in 6 seconds or less?",
+  link: "https://likewisetv.com/arcade/moviedle",
+  image: moviedlecard,
+},
+{
+  title: "Posterdle",
+  description: "Can you name the movie poster in 20 seconds or less?",
+  link: "https://likewisetv.com/arcade/posterdle",
+  image: posterdlecard,
+},
+{
+  title: "NFLXdle",
+  description: "Can you name the movie in 6 seconds or less?",
+  link: "https://likewisetv.com/arcade/nflxdle",
+  image: nflxdlecard,
+},
+{
+  title: "Bookdle",
+  description: "For people who read",
+  link: "https://likewisetv.com/arcade/bookdle",
+  image: bookdlecard,
+},
+{
+  title: "TVdle",
+  description: "Can you name the tv show in 20 seconds or less?",
+  link: "https://likewisetv.com/arcade/tvdle",
+  image: tvdlecard,
+}]

@@ -31,7 +31,7 @@ type AboutTraitsProps = {
   title: string;
 };
 const AboutTraits = (props : AboutTraitsProps) => {
-  return <div className="h-36 w-1/2 border border-blue-300 rounded-2xl flex flex-row p-6 gap-4 items-center">
+  return <div className="h-36 w-1/2 border border-blue-300 rounded-2xl flex flex-col sm:flex-row p-6 gap-4 items-center">
     <IonIcon icon={props.icon} className="h-16 w-16 !fill-blue-300 !stroke-blue-300 text-blue-300" />
     <div>{props.title}</div>
   </div>;
