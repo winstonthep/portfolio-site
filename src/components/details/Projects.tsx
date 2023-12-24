@@ -1,7 +1,7 @@
 import { ProjectSites } from "./types";
 export const Projects = () => {
   return (
-    <div className="w-full min-h-[556px] sm:pt-16 flex flex-row flex-wrap gap-6 justify-center items-center">
+    <div className="w-full min-h-[556px]  flex flex-row flex-wrap gap-6 justify-center items-center">
       <div className="text-3xl font-bold w-full text-white">My Work</div>
       <div className="w-full">
         <div className="h-2 w-16 rounded-full bg-blue-300"></div>
@@ -36,8 +36,8 @@ const ProjectPreview = (props: {
         />
       </a>
       <div className="w-full h-full flex flex-col justify-center items-center text-white">
-        <div className="text-2xl font-bold">{props.title}</div>
-        <div className="text-lg">{props.description}</div>
+        <div className="text-xl sm:text-2xl font-bold">{props.title}</div>
+        <div className="text-base sm:text-lg">{props.description}</div>
       </div>
     </div>
   );

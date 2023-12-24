@@ -150,5 +150,8 @@
   .ident{
     width: 100%;
   }
+  .bottom-navbar {
+    font-size: 12px;
+  }
 
 }

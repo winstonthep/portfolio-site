@@ -51,7 +51,7 @@ export const Resume = () => {
                   {"Advanced Software Engineering Immersive"}
                 </span>
               </div>
-              <div className="text-md sm:text-lg italic text-gray-300">
+              <div className="text-base sm:text-lg italic text-gray-300">
                 February 2022
               </div>
             </div>
@@ -64,7 +64,7 @@ export const Resume = () => {
                   {"Bachelor of Arts, Economics"}
                 </span>
               </div>
-              <div className="text-md sm:text-lg italic text-gray-300">
+              <div className="text-base sm:text-lg italic text-gray-300">
                 June 2017
               </div>
             </div>
@@ -88,7 +88,7 @@ const ResumeItem = (props: ResumeItemProps) => {
       <div className="text-lg sm:text-xl">
         {props.title} | <span className="text-blue-300">{props.company}</span>
       </div>
-      <div className="text-md sm:text-lg italic text-gray-300">
+      <div className="text-base sm:text-lg italic text-gray-300">
         {props.date}
       </div>
       {/* <div className="text-sm">{props.description}</div> */}
