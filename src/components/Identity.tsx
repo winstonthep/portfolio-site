@@ -1,5 +1,6 @@
 import { logoLinkedin, mailOutline, phonePortrait, logoGithub } from "ionicons/icons";
 import { IonIcon } from "@ionic/react";
+import { contactItemClicked } from "../analytics";
 
 export const Identity = () => {
   return (
@@ -68,7 +69,11 @@ type IdentityItemProps = {
 };
 const IdentityItem = (props: IdentityItemProps) => {
   return (
-    <div className="flex flex-row w-full">
+    <div className="flex flex-row w-full"
+      onClick={() => {
+        contactItemClicked(props.title);
+      }}
+    >
       <a
         className="ident-button hover:bg-white p-2 border border-blue-300 flex flex-row items-center justify-center hover:shadow-lg hover:shadow-blue-300/50 rounded-2xl "
         target="_blank"
