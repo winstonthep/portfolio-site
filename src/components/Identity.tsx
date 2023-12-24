@@ -5,7 +5,7 @@ export const Identity = () => {
   return (
     <div className="ident bg-[#292929] m-2 rounded-2xl justify-around items-center gap-2 p-4">
       <img
-        className="h-20 w-20 sm:h-32 sm:w-32 object-cover rounded-2xl p-1 border border-blue-300 !drop-shadow-2xl"
+        className="h-20 w-20 sm:h-32 sm:w-32 object-cover rounded-2xl p-1 border border-blue-300"
         src="/winstonprof.JPG"
         alt="avatar"
       />
@@ -70,7 +70,7 @@ const IdentityItem = (props: IdentityItemProps) => {
   return (
     <div className="flex flex-row w-full">
       <a
-        className="ident-button hover:bg-white p-2 border border-blue-300 flex flex-row items-center justify-center !drop-shadow-2xl rounded-2xl "
+        className="ident-button hover:bg-white p-2 border border-blue-300 flex flex-row items-center justify-center hover:shadow-lg hover:shadow-blue-300/50 rounded-2xl "
         target="_blank"
         href={props.link}
       >

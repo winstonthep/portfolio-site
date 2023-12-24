@@ -6,6 +6,16 @@ import tvdlecard from "../../assets/tvdle_card.webp";
 import promptlockercard from "../../assets/promptlocker.png";
 import augiecard from "../../assets/augiepreviewimg.png";
 
+import expresscard from '../../assets/express.png';
+import css3card from '../../assets/icons8-css3-48.png';
+import html5card from '../../assets/icons8-html-48.png';
+import javascriptcard from '../../assets/icons8-javascript-48.png';
+import nodejscard from '../../assets/icons8-nodejs-48.png';
+import reactcard from '../../assets/icons8-react-native-48.png';
+import typescriptcard from '../../assets/icons8-typescript-48.png';
+import nestjscard from '../../assets/icons8-nestjs-48.png';
+import tailwindcsscard from '../../assets/icons8-tailwind-css-48.png';
+
 export enum DetailsSectionEnum {
   ABOUT = "About",
   RESUME = "Resume",
@@ -92,4 +102,43 @@ export const ProjectSites =[{
   description: "Can you name the tv show in 20 seconds or less?",
   link: "https://likewisetv.com/arcade/tvdle",
   image: tvdlecard,
+}]
+
+export const techs = [{
+  title: "React",
+  link: "https://reactjs.org/",
+  image: reactcard,
+},{
+  title: "Typescript",
+  link: "https://www.typescriptlang.org/",
+  image: typescriptcard,
+},{
+  title: "Javascript",
+  link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+  image: javascriptcard,
+},{
+  title: "NodeJS",
+  link: "https://nodejs.org/en/",
+  image: nodejscard,
+},{
+  title: "Express",
+  link: "https://expressjs.com/",
+  image: expresscard,
+},{
+  title: "NestJS",
+  link: "https://nestjs.com/",
+  image: nestjscard,
+},{
+  title: "TailwindCSS",
+  link: "https://tailwindcss.com/",
+  image: tailwindcsscard,
+},{
+  title: "CSS3",
+  link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+  image: css3card,
+},{
+  title: "HTML5",
+  link: "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5",
+  image: html5card,
+
 }]
