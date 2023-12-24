@@ -6,7 +6,7 @@ export const About = () => {
       <div className=" w-full flex flex-col gap-4">
         <div className="text-3xl font-bold">About Me</div>
         <p>
-          {`I am a fullstack web developer from Raleigh, North Carolina. I thoroughly enjoy working on all parts of the stack and the complex problem solving that goes along with it. Outside of work, I play a lot of tennis (4.5 NTRP for those of you who play USTA) and follow the WTA and ATP tours year round. I also enjoy video games, playing with my dachshund puppy, cooking, and watching tv and films. Prior to software engineering, I was working in Hollywood.`}
+          {`Howdy and welcome to my site! A bit about me - I am a fullstack web developer from Raleigh, North Carolina. I thoroughly enjoy working on all parts of the stack and the complex problem solving that goes along with it. Outside of work, I play a lot of tennis (4.5 NTRP for those of you who play USTA) and follow the WTA and ATP tours year round. I also spend my free time playing video games, reading, playing with my dachshund puppy Dash, cooking, and watching tv and films. Prior to software engineering, I had a stint in Hollywood.`}
         </p>
       </div>
       <div className=" w-full flex flex-col gap-4">
