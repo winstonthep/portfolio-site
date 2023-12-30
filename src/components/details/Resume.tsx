@@ -5,7 +5,7 @@ import { briefcaseOutline, bookOutline, desktopOutline } from "ionicons/icons";
 import { Technologies } from "./Technologies";
 export const Resume = () => {
   return (
-    <div className="text-white flex flex-col justify-between h-full w-full gap-2">
+    <div className="text-white flex flex-col justify-between h-full w-full gap-2 p-2">
       <div className="h-full w-full flex flex-col gap-4">
         <div className="text-3xl font-bold flex flex-row gap-2 items-center">
           <div>Resume</div>

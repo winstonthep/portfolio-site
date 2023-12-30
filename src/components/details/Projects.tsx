@@ -1,7 +1,7 @@
 import { ProjectSites } from "./types";
 export const Projects = () => {
   return (
-    <div className="w-full min-h-[556px]  flex flex-row flex-wrap gap-6 justify-center items-center">
+    <div className="w-full min-h-[556px]  flex flex-row flex-wrap gap-6 justify-center items-center p-2">
       <div className="text-3xl font-bold w-full text-white">My Work</div>
       <div className="w-full">
         <div className="h-2 w-16 rounded-full bg-blue-300"></div>
@@ -14,6 +14,7 @@ export const Projects = () => {
             description={project.description}
             image={project.image}
             link={project.link}
+            onClick={project.onClick}
           />
         );
       })}
@@ -26,9 +27,10 @@ const ProjectPreview = (props: {
   description: string;
   image: string;
   link: string;
+  onClick: () => void;
 }) => {
   return (
-    <div className="flex flex-col justify-center items-center gap-2">
+    <div className="flex flex-col justify-center items-center gap-2" onClick={props.onClick}>
       <a href={props.link} target="_blank" rel="noreferrer">
         <img
           src={props.image}

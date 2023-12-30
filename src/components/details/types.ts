@@ -16,6 +16,15 @@ import typescriptcard from '../../assets/icons8-typescript-48.png';
 import nestjscard from '../../assets/icons8-nestjs-48.png';
 import tailwindcsscard from '../../assets/icons8-tailwind-css-48.png';
 
+import { augieClicked,
+  moviedleClicked,
+  posterdleClicked,
+  nflxdleClicked,
+  bookdleClicked,
+  tvdleClicked,
+  promptLockerClicked
+} from "../../analytics";
+
 export enum DetailsSectionEnum {
   ABOUT = "About",
   RESUME = "Resume",
@@ -62,46 +71,60 @@ export const jobExperience = [
   }
 ];
 
-export const ProjectSites =[{
+type ProjectSiteType = {
+  title: string;
+  description: string;
+  link: string;
+  image: string;
+  onClick: () => void;
+}
+export const ProjectSites: ProjectSiteType[] =[{
   title: "Augie",
   description: "Augie: AI Assisted Video Creation & Editing (beta preview)",
   link: "https://beta.meetaugie.com/",
   image: augiecard,
+  onClick: augieClicked,
 
 }, {
   title: "PromptLocker",
   description: "PromptLocker: a community for AI Artists to get and give feedback",
   link: "https://www.promptlocker.com/",
   image: promptlockercard,
+  onClick: promptLockerClicked,
 },{
   title: "Moviedle",
   description: "Can you name the movie in 6 seconds or less?",
   link: "https://likewisetv.com/arcade/moviedle",
   image: moviedlecard,
+  onClick: moviedleClicked,
 },
 {
   title: "Posterdle",
   description: "Can you name the movie poster in 20 seconds or less?",
   link: "https://likewisetv.com/arcade/posterdle",
   image: posterdlecard,
+  onClick: posterdleClicked,
 },
 {
   title: "NFLXdle",
   description: "Can you name the movie in 6 seconds or less?",
   link: "https://likewisetv.com/arcade/nflxdle",
   image: nflxdlecard,
+  onClick: nflxdleClicked,
 },
 {
   title: "Bookdle",
   description: "For people who read",
   link: "https://likewisetv.com/arcade/bookdle",
   image: bookdlecard,
+  onClick: bookdleClicked,
 },
 {
   title: "TVdle",
   description: "Can you name the tv show in 20 seconds or less?",
   link: "https://likewisetv.com/arcade/tvdle",
   image: tvdlecard,
+  onClick: tvdleClicked,
 }]
 
 export const techs = [{
