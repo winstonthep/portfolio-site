@@ -25,9 +25,10 @@ export const Resume = () => {
             <div>Experience</div>
           </div>
           <div className="flex flex-col justify-between items-start">
-            {jobExperience.map((job) => {
+            {jobExperience.map((job, index) => {
               return (
                 <ResumeItem
+                  key={job.title + index}
                   title={job.title}
                   company={job.company}
                   date={job.date}
@@ -93,8 +94,10 @@ const ResumeItem = (props: ResumeItemProps) => {
       </div>
       {/* <div className="text-sm">{props.description}</div> */}
       <ul className="flex flex-col justify-between items-start list-disc pl-6">
-        {props.tasks?.map((task) => {
-          return <li className="text-xs sm:text-sm">{task}</li>;
+        {props.tasks?.map((task, index) => {
+          return <li
+          key={index + props.title + "task"}
+          className="text-xs sm:text-sm">{task}</li>;
         })}
       </ul>
     </div>

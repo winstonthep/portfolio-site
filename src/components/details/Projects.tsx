@@ -10,6 +10,7 @@ export const Projects = () => {
       {ProjectSites.map((project) => {
         return (
           <ProjectPreview
+            key={project.title}
             title={project.title}
             description={project.description}
             image={project.image}

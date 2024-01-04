@@ -2,9 +2,10 @@ import { techs } from "./types";
 export const Technologies = () => {
   return (
     <div className="w-full h-full flex flex-row flex-wrap gap-6 justify-center items-center p-4">
-      {techs.map((tech) => {
+      {techs.map((tech, index) => {
         return (
           <TechIconButton
+            key={tech.title + index}
             icon={tech.image}
             link={tech.link}
             title={tech.title}
