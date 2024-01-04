@@ -16,7 +16,7 @@ export const Identity = () => {
             Winston Pantelakos
           </div>
           <div className="text-white text-sm sm:text-lg text-center w-4/5">
-            Fullstack Web Developer
+            Fullstack Software Engineer
           </div>
         </div>
         <div className="ident-items justify-center items-center  flex-wrap">
